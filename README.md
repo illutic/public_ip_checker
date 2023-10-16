@@ -12,3 +12,12 @@ GMAIL_SUBJECT="Public IP Address Changed"
 GMAIL_SMTP_SERVER="smtp.gmail.com"
 GMAIL_SMTP_PORT="465"
 ```
+
+## crontab
+
+You can run a cron job to check the public IP address every specified interval.
+
+```bash
+# crontab -e
+* * * * * /usr/bin/python <path-to-working-dir>/check_ip.py
+```
